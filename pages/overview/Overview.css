@@ -1,0 +1,58 @@
+.overview-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px; /* Increased padding for a more spacious layout */
+  border-radius: 12px; /* More rounded corners for a modern look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(1px); /* Glassy blur effect */
+}
+
+h2 {
+  text-align: center;
+  color: #ff4d4d; /* Softer red for better aesthetics */
+  font-size: 32px; /* Larger font size for prominence */
+  margin-bottom: 20px; /* Spacing below the header */
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  border: 2px solid #007bff; /* Thicker border for better visibility */
+  border-radius: 10px; /* Slightly more rounded corners */
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 calc(20% - 40px);
+  cursor: pointer; /* Change cursor to pointer */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+.stat-item:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* Subtle shadow effect on hover */
+}
+
+.stat-item h3 {
+  margin: 0;
+  color: #007bff; /* Blue color for headings */
+  font-size: 20px; /* Slightly larger font for headings */
+}
+
+.stat-item p {
+  font-size: 28px; /* Increased font size for emphasis */
+  font-weight: bold;
+  color: #333; /* Darker color for better contrast */
+}
+
+.error {
+  color: red;
+  font-weight: bold; /* Bold error messages for visibility */
+  text-align: center; /* Center the error messages */
+  margin-top: 10px; /* Space above error messages */
+}

@@ -1,0 +1,79 @@
+/* src/App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(181, 180, 180, 0.284); */
+  
+ 
+  /* background-image: url('./components/LoginForm/backimg.jpg');
+  background-size: contain; */
+  
+  
+}
+
+.container {
+  display: flex;
+  
+  
+  
+}
+
+.content {
+  margin-left: 10px; 
+  padding: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-top: 5px;
+  /* background-image: url(./components/Sidebar/crimescene.png); */
+  background-image: url(./components/Assets/pixelcut-export.jpeg);
+  background-size: cover;
+ 
+  height: 90vh;
+  
+  
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  /* z-index: 1000; */
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky; 
+  top: 50px; 
+  width: 160px;
+  height: 93vh;
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: sticky;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,86 @@
+.header {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; 
+  box-sizing: border-box;
+  position: relative; /* Ensure the header can contain absolutely positioned elements */
+  z-index: 10; /* Keep z-index high for header */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  animation: scroll 10s linear infinite; /* Optional scrolling animation */
+}
+
+.header .user-info {
+  display: flex;
+  align-items: center;
+  position: relative; /* Needed for dropdown positioning */
+}
+
+.header .profile {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.header .profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.header .dropdown-menu {
+  position: absolute;
+  top: 70px; /* Ensure it's positioned below the header */
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 100; /* Ensure it's above other content */
+  display: none; 
+}
+
+.header .dropdown-menu.active {
+  display: block; /* Show dropdown when active */
+}
+
+.header .dropdown-menu a,
+.header .dropdown-menu button {
+  display: block;
+  padding: 10px;
+  color: #007bff;
+  text-decoration: none;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
+}
+
+.header .dropdown-menu a:hover,
+.header .dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}

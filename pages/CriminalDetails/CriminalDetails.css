@@ -1,0 +1,130 @@
+/* .criminal-details-container {
+    padding: 20px;
+  }
+  
+  .criminal-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .error {
+    color: red;
+  }
+   */
+   .criminal-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-header .criminal-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+.criminal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.criminal-info div {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.criminal-info div strong {
+    color: #007bff;
+}
+
+.criminal-crimes {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.criminal-crimes h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.criminal-crimes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.criminal-crimes table th, 
+.criminal-crimes table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.criminal-crimes table th {
+    background-color: #28a745;
+    color: white;
+    text-transform: uppercase;
+}
+
+.criminal-crimes table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.criminal-crimes table td {
+    color: #555;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.no-crimes {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    margin-top: 20px;
+}

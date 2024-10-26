@@ -1,0 +1,125 @@
+/* General form styling */
+form {
+  background: rgba(255, 255, 255, 0.1); /* Glassy effect */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%; /* Full width inside container */
+  max-width: 900px; /* Cap the width for larger screens */
+ 
+  max-height: 70vh; /* Set max height to 75% of the viewport */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds height */
+  margin: 50px auto;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Heading styling */
+h2 {
+  text-align: center;
+  color: #ff3333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="number"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(32, 1, 1, 0.2); /* Slight transparency */
+  color: #fff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px 2px #33ffee, inset 0 0 10px rgba(255, 255, 255, 0.4);
+  border-color: #ff3333;
+}
+
+input[type="file"] {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #ff6666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  background-color: #ff3333;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background-color: #ff6666;
+  box-shadow: 0 0 10px #ff3333, 0 0 20px rgba(255, 102, 102, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ff6666, 0 0 10px #ff3333;
+  }
+  to {
+    text-shadow: 0 0 20px #ff6666, 0 0 30px #ff3333;
+  }
+}
+
+/* Make form scrollable if content exceeds height */
+form::-webkit-scrollbar {
+  width: 8px;
+}
+
+form::-webkit-scrollbar-thumb {
+  background-color: #ff3333;
+  border-radius: 10px;
+}
+
+form::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
